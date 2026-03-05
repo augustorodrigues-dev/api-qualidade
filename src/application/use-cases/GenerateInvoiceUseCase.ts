@@ -26,6 +26,10 @@ export class GenerateInvoiceUseCase {
       return existingInvoice;
     }
 
+    if (input.referenceMonth === "") {
+      throw new NotFoundError("Reference month cannot be empty");
+    }
+
     const transactions = await this.transactionRepository.findByCardAndMonth(input.cardId, input.referenceMonth);
     const approvedTransactions = transactions.filter((transaction) => transaction.status === TransactionStatus.APPROVED);
 

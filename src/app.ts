@@ -10,9 +10,6 @@ export function createApp(): express.Express {
   const container = new ApplicationContainer();
 
   app.use(express.json());
-  app.get("/api/docs.json", (_request, response) => {
-    response.json(openApiDocument);
-  });
   app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(openApiDocument));
   app.use("/api", buildRoutes(container));
   app.use(errorHandler);

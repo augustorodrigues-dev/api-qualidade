@@ -81,7 +81,6 @@ Base URL: `/api`
 ## Documentacao Swagger
 
 - UI interativa: `GET /api/docs`
-- OpenAPI JSON: `GET /api/docs.json`
 
 ## SonarQube
 

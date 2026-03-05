@@ -20,7 +20,7 @@ export class ProcessTransactionUseCase {
       throw new ValidationError("amountCents must be a positive integer");
     }
 
-    if (!input.description.trim() || input.description.length > MAX_TRANSACTION_DESCRIPTION_LENGTH) {
+    if (!input.description.trim() || input.description.length > 120) {
       throw new ValidationError(`description must have 1 to ${MAX_TRANSACTION_DESCRIPTION_LENGTH} characters`);
     }
 
@@ -34,7 +34,7 @@ export class ProcessTransactionUseCase {
     }
 
     const reserved = card.reserve(input.amountCents);
-    const status = reserved ? TransactionStatus.APPROVED : TransactionStatus.DECLINED;
+    const status = reserved === true ? TransactionStatus.APPROVED : TransactionStatus.DECLINED;
 
     const transaction = Transaction.create({
       id: this.idGenerator.generate(),
