@@ -5,6 +5,34 @@
       "name": "Alice",
       "email": "alice@mail.com",
       "createdAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "02c6bb40-88e1-4884-a4e4-5a880c0911da",
+      "name": "Nando",
+      "email": "nandinho@mail.com",
+      "passwordHash": "$2b$10$SJyrxWljQS8KQZlb3xr9nuVg0GuYDDpIjlv8rykWguB2RaXU9wX1y",
+      "createdAt": "2026-03-06T11:31:41.582Z"
+    },
+    {
+      "id": "374aa59d-f609-483d-97a3-f5b019774f46",
+      "name": "Alicessaddsa",
+      "email": "alicassasae@mail.com",
+      "passwordHash": "$2b$10$YgmACwKJlf/Vr5kOGr.cJO6hVm9h48bRN/YHI/ygaDHaJ1X8RT5CW",
+      "createdAt": "2026-03-06T11:32:47.099Z"
+    },
+    {
+      "id": "c943843f-4969-4a12-9d75-d54e4d2e0dbf",
+      "name": "Nando",
+      "email": "nando@mail.com",
+      "passwordHash": "$2b$10$Q.VUwzaiKvqR.DrUT1HwUOn1hgS9s0hPEuYW9yTtNipiIDaOdAC2y",
+      "createdAt": "2026-03-06T11:37:38.915Z"
+    },
+    {
+      "id": "1c2636be-4118-440a-beaa-64c7daaa9ac7",
+      "name": "Nand",
+      "email": "nando@gmail.com",
+      "passwordHash": "$2b$10$0a0PxyzCGmCslmlI3J61jeLP4THv4vbnp/Y4A4WUHyAUZWEBUKh..",
+      "createdAt": "2026-03-06T11:52:26.667Z"
     }
   ],
   "cards": [
@@ -16,6 +44,24 @@
       "availableLimitCents": 490000,
       "status": "ACTIVE",
       "createdAt": "2026-03-05T04:16:02.004Z"
+    },
+    {
+      "id": "e214295a-5108-4591-981a-45f1225cbe9f",
+      "userId": "374aa59d-f609-483d-97a3-f5b019774f46",
+      "last4": "3456",
+      "limitCents": 50000,
+      "availableLimitCents": 50000,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-06T11:36:39.980Z"
+    },
+    {
+      "id": "0c4be530-7a5d-405c-b124-4c27d096e2dc",
+      "userId": "c943843f-4969-4a12-9d75-d54e4d2e0dbf",
+      "last4": "3454",
+      "limitCents": 500000,
+      "availableLimitCents": 490000,
+      "status": "ACTIVE",
+      "createdAt": "2026-03-06T11:40:51.405Z"
     }
   ],
   "transactions": [
@@ -28,6 +74,38 @@
       "status": "APPROVED",
       "referenceMonth": "2026-03",
       "createdAt": "2026-03-05T04:16:59.252Z"
+    },
+    {
+      "id": "4061628c-3644-424d-9831-cd0118e308ff",
+      "cardId": "0c4be530-7a5d-405c-b124-4c27d096e2dc",
+      "userId": "c943843f-4969-4a12-9d75-d54e4d2e0dbf",
+      "amountCents": 10000,
+      "description": "Socio do papao",
+      "status": "CANCELLED",
+      "referenceMonth": "2026-03",
+      "createdAt": "2026-03-06T11:46:08.177Z",
+      "cancelledAt": "2026-03-06T11:46:58.713Z"
+    },
+    {
+      "id": "ddd545fc-ca48-4b77-a9c7-e5ae9eed730e",
+      "cardId": "0c4be530-7a5d-405c-b124-4c27d096e2dc",
+      "userId": "c943843f-4969-4a12-9d75-d54e4d2e0dbf",
+      "amountCents": 10000,
+      "description": "Socio do papao",
+      "status": "APPROVED",
+      "referenceMonth": "2026-03",
+      "createdAt": "2026-03-06T11:47:16.433Z"
+    },
+    {
+      "id": "50d78077-6ab0-4116-a6ba-bde1b99a642c",
+      "cardId": "0c4be530-7a5d-405c-b124-4c27d096e2dc",
+      "userId": "c943843f-4969-4a12-9d75-d54e4d2e0dbf",
+      "amountCents": 10200,
+      "description": "Socio cadeira do papao",
+      "status": "CHARGEBACK",
+      "referenceMonth": "2026-03",
+      "createdAt": "2026-03-06T11:47:35.116Z",
+      "chargebackAt": "2026-03-06T11:47:48.191Z"
     }
   ],
   "invoices": [
@@ -41,6 +119,15 @@
         "728f2fee-3432-425a-bdcd-121371b72dc4"
       ],
       "generatedAt": "2026-03-05T04:17:21.615Z"
+    },
+    {
+      "id": "3d6b84ee-95f6-49c5-84b5-ef1d159de3f8",
+      "cardId": "e214295a-5108-4591-981a-45f1225cbe9f",
+      "userId": "374aa59d-f609-483d-97a3-f5b019774f46",
+      "referenceMonth": "2026-03",
+      "totalCents": 0,
+      "transactionIds": [],
+      "generatedAt": "2026-03-06T11:44:57.243Z"
     }
   ]
 }
