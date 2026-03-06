@@ -3,4 +3,4 @@ coverage
 dist
 .env
 .DS_Store
-src/infrastructure/database/db.json
+**/db.json
