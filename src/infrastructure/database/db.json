@@ -10,28 +10,24 @@
       "id": "02c6bb40-88e1-4884-a4e4-5a880c0911da",
       "name": "Nando",
       "email": "nandinho@mail.com",
-      "passwordHash": "$2b$10$SJyrxWljQS8KQZlb3xr9nuVg0GuYDDpIjlv8rykWguB2RaXU9wX1y",
       "createdAt": "2026-03-06T11:31:41.582Z"
     },
     {
       "id": "374aa59d-f609-483d-97a3-f5b019774f46",
       "name": "Alicessaddsa",
       "email": "alicassasae@mail.com",
-      "passwordHash": "$2b$10$YgmACwKJlf/Vr5kOGr.cJO6hVm9h48bRN/YHI/ygaDHaJ1X8RT5CW",
       "createdAt": "2026-03-06T11:32:47.099Z"
     },
     {
       "id": "c943843f-4969-4a12-9d75-d54e4d2e0dbf",
       "name": "Nando",
       "email": "nando@mail.com",
-      "passwordHash": "$2b$10$Q.VUwzaiKvqR.DrUT1HwUOn1hgS9s0hPEuYW9yTtNipiIDaOdAC2y",
       "createdAt": "2026-03-06T11:37:38.915Z"
     },
     {
       "id": "1c2636be-4118-440a-beaa-64c7daaa9ac7",
       "name": "Nand",
       "email": "nando@gmail.com",
-      "passwordHash": "$2b$10$0a0PxyzCGmCslmlI3J61jeLP4THv4vbnp/Y4A4WUHyAUZWEBUKh..",
       "createdAt": "2026-03-06T11:52:26.667Z"
     }
   ],
